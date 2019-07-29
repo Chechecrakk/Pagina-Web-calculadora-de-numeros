@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Conversor de sistemas de numeración</title>
+<link rel="stylesheet" type="text/css" href="../css/estilo.css">
+ <script src="../javascript/javascript2.js"></script>
+</head>
+<body>
+
+
+<h1><u><i>Conversor de sistemas de numeracion.</i></u></h1>
+<p>Esta pagina es para <b>convertir numeros en sistemas de numeracion</b> desde un <b>decimal</b> hacia<i> binario, octal y hexadecimal.</i></p>
+
+<h2><i>Conversion de un numero decimal a binario</i></h2>
+<p>Para convertir un<strong>numero decimal a binario</strong> hay que dividir ese numero entre 2, despues dividimos el cociente obtenido otra vez por 2 y repetimos el mismo procedimiento hasta que el cociente sea 1. <br />Al finalizar eso el numero binario lo formamos tomando el primer digito del ultimo cociente, seguido por los residuos obtenidos en cada division, seleccionados de derecha a izquierda. Ejemplo:<br />
+<img src="../imagenes/esquema.jpg" />
+
+
+<h3><i>Conversion de un binario a decimal</i></h3>
+<p>Para convertir un <strong>binario a decimal</strong> hay que tomar los valores de posicion correspondiente a las columnas donde aparezcan unicamente unos.
+Despues, sumamos los valores de posicion para identificar el numero decimal equivalente. Ejemplo:</p>
+<img src="../imagenes/esquema2.jpg" />
+
+<h4><i>Conversion de un binario a octal</i></h4>
+<p>Para convertir un numero <strong>decimal a octal</strong> se toma el numero entero y se divide entre 8 repetidamente hasta que el dividendo sea menor que el divisor, para colocar entonces el numero 0 y pasar el dividendo a formar el primer dígito del numero equivalente en decimal. Luego, se toma la parte fraccionaria del numero decimal y la multiplicamos por 8 sucesivamente hasta que el producto no tenga números fraccionarios, despues, pasamos la parte entera del producto a formar el dígito correspondiente entonces al igual que los demás sistemas, el numero equivalente en el sistema decimal, esta formado por la unión del numero entero equivalente y el numero fraccionario equivalente. Ejemplo:</p>
+<img src="../imagenes/esquema3.jpg" />
+
+<h5><i>Conversion de un octal a binario</i></h5>
+<p>La facilidad para convertir un numero <strong>octal a binario</strong> es que unnumero octal se convierte a binario de manera individual. Ejemplo:</p>
+<img src="../imagenes/esquema4.jpg" />
+
+<h6><i>Conversion de un decimal a hexadecimal</i></h6>
+<p>Para convertir un numero <strong>decimal a hexadecimal</strong> se toma la parte entera y se divide sucesivamente por el numero decimal 16(base) hasta que el cociente sea 0. Los numeros enteros resultantes de los cocientes, pasaran a conformar el numero hexadecimal correspondiente, teniendo en cuenta que el sistema de numeración hexadecimal posee solo 16 símbolo. La parte fraccionaria del numero a convertir se multiplica por 16 (Base) sucesivamente hasta que el producto resultante no tenga parte fraccionaria y el numero equivalente se forma, de la unión de los dos números equivalentes, tanto entero como fraccionario, separados por un punto que establece la diferencia entre ellos. Ejemplo:</p>
+<img src="../imagenes/esquema5.jpg" />
+
+<h6><i>Conversion de un hexadecimal a decimal</i></h6>
+<p>Para convetir un numero <strong>hexadecimal a decimal</strong> multiplicamos el valor de posición de cada columna por el dígito hexadecimal correspondiente.
+y el resultado del número decimal equivalente se obtiene, sumando todos los productos obtenidos en el paso anterior. Ejemplo:</p>
+<img src="../imagenes/esquema6.jpg" />
+
+<body><center><div class="box">
+        <h2>Convertidor de decimal</h2><hr><div class="input"><input type="number" id="num" placeholder="escriba aqui"></div>
+       <div class="contain">
+        <center><table border="0">
+        <tr>
+        <td><label>Binario</label></td>
+        <td> <input type="text" class="out" id="demo" disabled></td></tr>
+        <tr>
+        <td><label>Octal</label></td>
+        <td> <input type="text" class="out" id="demo1" disabled></td></tr>
+        <tr>
+        <td><label>Hexa</label></td>
+        <td> <input type="text" class="out" id="demo2" disabled></td></tr>
+        </table></center></div>
+        <div class="foot"><input class="submit" id="convert" type="submit" value="convertir" onclick="convert()"> <input id="resetiar" class="submit" type="submit" value="reset"><br/><br/></div>
+        </div></center>
+        
+
+</body>
+</html>
+
+
+
+
+
+ 
+
+ 
